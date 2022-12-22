@@ -3,7 +3,9 @@
 void StartScene(Player myPlayer[]) {
 	cout << "Tota la historia principal i el context, Preguntar els noms" << endl << endl;
 	PlayerNames(myPlayer);
-	cout << endl << "Presentar totes les possibles professions y demanar un input" << endl
+	system("Pause");
+	system("cls");
+	cout << "Presentar totes les possibles professions y demanar un input" << endl
 		<< "0 --> Cuiner   1 --> Militar   2 --> Comediant   3 --> Capella   4 --> Mecanic   5 --> Music" << endl;
 	PlayerProfessions(myPlayer);
 	system("Pause");
@@ -34,32 +36,32 @@ void PlayerProfessions(Player myPlayer[]) { //si poses una lletra es bugeja, fal
 		case 0:
 			myPlayer[i].profession = COOK;
 			correctInput = true;
-			cout << "Jugador " << i + 1 << " --> Cuiner" << endl << endl;
+			cout << myPlayer[i].name << " --> Cuiner" << endl << endl;
 			break;
 		case 1:
 			myPlayer[i].profession = MILITAR;
 			correctInput = true;
-			cout << "Jugador " << i + 1 << " --> Militar" << endl << endl;
+			cout << myPlayer[i].name << " --> Militar" << endl << endl;
 			break;
 		case 2:
 			myPlayer[i].profession = JESTER;
 			correctInput = true;
-			cout << "Jugador " << i + 1 << " --> Comediant" << endl << endl;
+			cout << myPlayer[i].name << " --> Comediant" << endl << endl;
 			break;
 		case 3:
 			myPlayer[i].profession = PRIEST;
 			correctInput = true;
-			cout << "Jugador " << i + 1 << " --> Capella" << endl << endl;
+			cout << myPlayer[i].name << " --> Capella" << endl << endl;
 			break;
 		case 4:
 			myPlayer[i].profession = MECHANIC;
 			correctInput = true;
-			cout << "Jugador " << i + 1 << " --> Mecanic" << endl << endl;
+			cout << myPlayer[i].name << " --> Mecanic" << endl << endl;
 			break;
 		case 5:
 			myPlayer[i].profession = MUSICIAN;
 			correctInput = true;
-			cout << "Jugador " << i + 1 << " --> Music" << endl << endl;
+			cout << myPlayer[i].name << " --> Music" << endl << endl;
 			break;
 
 		default:

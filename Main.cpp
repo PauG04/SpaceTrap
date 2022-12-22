@@ -4,9 +4,13 @@ int main() {
 
 	srand(time(NULL));
 	
+	system("color 06");
+
 	Scenes currentScene = START;
 	bool isPlaying = true;
-	int dia = 0;
+	int day = 0;
+
+	int totalFood = RandomNumber(4, 6);
 
 	Player myPlayer[4];
 	for (int i = 0; i < 4; i++)
@@ -23,7 +27,7 @@ int main() {
 				//CombatScene();
 				break;
 			case MENU:
-				MenuScene(currentScene, dia);
+				MenuScene(currentScene, day, myPlayer, totalFood);
 				break;
 			case LOOTING:
 				//LootingScene();

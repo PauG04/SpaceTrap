@@ -17,3 +17,4 @@ struct Player
 	string name;
 };
 
+string PrintProfessions(Player myPlayer[], int& i);
