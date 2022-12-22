@@ -14,5 +14,6 @@ struct Player
 	Professions profession;
 	bool isExpedition;
 	State currentState;
+	string name;
 };
 

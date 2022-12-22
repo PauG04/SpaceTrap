@@ -1,0 +1,5 @@
+﻿  Main.cpp
+C:\Users\paugi\Desktop\SpaceTrap\Main.cpp(5,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Start.cpp
+  Generating Code...
+  SpaceTrap.vcxproj -> C:\Users\paugi\Desktop\SpaceTrap\x64\Debug\SpaceTrap.exe

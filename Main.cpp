@@ -16,7 +16,7 @@ int main() {
 		{
 			switch (currentScene) {
 			case START:
-				//StartScene();
+				StartScene(myPlayer);
 				currentScene = MENU;
 				break;
 			case COMBAT:
