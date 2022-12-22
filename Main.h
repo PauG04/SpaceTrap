@@ -1,1 +1,9 @@
 #pragma once
+#include "Scenes.h"
+#include "Math.h"
+#include "Player.h"
+#include "Menu.h"
+#include "Gameover.h"
+#include "Event.h"
+#include "Expedition.h"
+#include "Looting.h"
