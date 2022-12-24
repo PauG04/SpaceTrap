@@ -21,52 +21,56 @@ void PlayerNames(Player myPlayer[]) {
 	}
 }
 
-void PlayerProfessions(Player myPlayer[]) { //si poses una lletra es bugeja, falta fer que no es repeteixi lletra, ho he fet de l'unica manera que se m'ha ocorregut
+void PlayerProfessions(Player myPlayer[]) { //si poses una lletra es bugeja, falta fer que no es repeteixi num, ho he fet de l'unica manera que se m'ha ocorregut
 	cout << endl;
 	int whatProfession;
 	for (int i = 0; i < 4; i++)
 	{
 		bool correctInput = false;
-		cout << "Professio del Jugador " << i + 1 << ": ";
-		cin >> whatProfession;
-
-
-		switch (whatProfession)
+		while (!correctInput)
 		{
-		case 0:
-			myPlayer[i].profession = COOK;
-			correctInput = true;
-			cout << myPlayer[i].name << " --> Cuiner" << endl << endl;
-			break;
-		case 1:
-			myPlayer[i].profession = MILITAR;
-			correctInput = true;
-			cout << myPlayer[i].name << " --> Militar" << endl << endl;
-			break;
-		case 2:
-			myPlayer[i].profession = JESTER;
-			correctInput = true;
-			cout << myPlayer[i].name << " --> Comediant" << endl << endl;
-			break;
-		case 3:
-			myPlayer[i].profession = PRIEST;
-			correctInput = true;
-			cout << myPlayer[i].name << " --> Capella" << endl << endl;
-			break;
-		case 4:
-			myPlayer[i].profession = MECHANIC;
-			correctInput = true;
-			cout << myPlayer[i].name << " --> Mecanic" << endl << endl;
-			break;
-		case 5:
-			myPlayer[i].profession = MUSICIAN;
-			correctInput = true;
-			cout << myPlayer[i].name << " --> Music" << endl << endl;
-			break;
+			cout << "Professio del Jugador " << i + 1 << ": ";
+			cin >> whatProfession;
 
-		default:
-			break;
+
+			switch (whatProfession)
+			{
+			case 0:
+				myPlayer[i].profession = COOK;
+				correctInput = true;
+				cout << myPlayer[i].name << " --> Cuiner" << endl << endl;
+				break;
+			case 1:
+				myPlayer[i].profession = MILITAR;
+				correctInput = true;
+				cout << myPlayer[i].name << " --> Militar" << endl << endl;
+				break;
+			case 2:
+				myPlayer[i].profession = JESTER;
+				correctInput = true;
+				cout << myPlayer[i].name << " --> Comediant" << endl << endl;
+				break;
+			case 3:
+				myPlayer[i].profession = PRIEST;
+				correctInput = true;
+				cout << myPlayer[i].name << " --> Capella" << endl << endl;
+				break;
+			case 4:
+				myPlayer[i].profession = MECHANIC;
+				correctInput = true;
+				cout << myPlayer[i].name << " --> Mecanic" << endl << endl;
+				break;
+			case 5:
+				myPlayer[i].profession = MUSICIAN;
+				correctInput = true;
+				cout << myPlayer[i].name << " --> Music" << endl << endl;
+				break;
+
+			default:
+				break;
+			}
 		}
+
 
 	}
 }
