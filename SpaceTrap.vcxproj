@@ -127,7 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Eenemy.cpp" />
+    <ClCompile Include="Combat.cpp" />
+    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Event.cpp" />
     <ClCompile Include="Expedition.cpp" />
     <ClCompile Include="Gameover.cpp" />
@@ -139,6 +140,7 @@
     <ClCompile Include="Start.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Combat.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Event.h" />
     <ClInclude Include="Expedition.h" />

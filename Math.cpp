@@ -8,9 +8,9 @@ int RandomNumber(int min, int max) {
 void Bar(int barLenght, int maxBarLenght) {
 
 	cout << " [";
-	for (int i = 0; i < barLenght; i++)
+	for (int digits = (barLenght * 10 / maxBarLenght) + 1; digits > 0; digits--)
 		cout << '=';
-	for (int i = 0; i < (maxBarLenght - barLenght); i++)
+	for (int digits = (barLenght * 10 / maxBarLenght) + 1; digits <= 10; digits++)
 		cout << ' ';
 	cout << ']';
 }

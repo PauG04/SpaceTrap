@@ -1,8 +1,5 @@
 #pragma once
 #include <iostream>
-#define MAX_HP 10
-#define MAX_STAMINA 10
-#define MAX_HUNGRY 10
 
 
 using namespace std;

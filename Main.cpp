@@ -23,20 +23,20 @@ int main() {
 				StartScene(myPlayer);
 				currentScene = MENU;
 				break;
-			case COMBAT:
-				//CombatScene();
-				break;
 			case MENU:
 				MenuScene(currentScene, day, myPlayer, totalFood);
+				break;
+			case EVENT:	
+				EventScene(currentScene, myPlayer, day);
+				break;
+			case COMBAT:
+				//CombatScene();
 				break;
 			case LOOTING:
 				//LootingScene();
 				break;
 			case EXPEDITION:
 				//ExpeditionScene();
-				break;
-			case EVENT:
-				//EventScene();
 				break;
 			case GAMEOVER:
 				//GameoverScene();

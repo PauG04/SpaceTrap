@@ -7,3 +7,4 @@ void MenuScene(Scenes& currentScene, int& dia, Player myPlayer[], int& totalFood
 void PrintStats(Player myPlayer[]);
 void PrintObjects();
 void PrintFood(int totalFood);
+void ChooseAction(Scenes& currentScene, Player myPlayer[]);
